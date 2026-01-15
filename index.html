@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>茶道と私 | さとみ</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", serif;
+            color: #333;
+            line-height: 1.8;
+            background-color: #f9f7f2;
+        }
+
+        /* 動画背景エリア */
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #bg-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            filter: brightness(60%);
+        }
+
+        .hero-text {
+            color: #fff;
+            text-align: center;
+            z-index: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 3.5rem;
+            font-weight: normal;
+            letter-spacing: 0.5rem;
+            margin: 0;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        }
+
+        /* コンテンツエリア */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            font-weight: normal;
+            color: #4a5d4e;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #4a5d4e;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .profile-section {
+            margin-bottom: 60px;
+            text-align: left;
+        }
+
+        /* メッセージエリア */
+        .message-section {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .caution-text {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 20px;
+        }
+
+        .submit-btn {
+            background-color: #4a5d4e;
+            color: #fff;
+            padding: 15px 40px;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #38463a;
+        }
+
+        footer {
+            padding: 40px 0;
+            font-size: 0.8rem;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="video-container">
+        <video autoplay muted loop playsinline id="bg-video">
+            <source src="1-11.mp4" type="video/mp4">
+        </video>
+        <div class="hero-text">
+            <h1>茶道と私</h1>
+            <p>一期一会の心を、大阪の空の下で。</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <section class="profile-section">
+            <h2>自己紹介</h2>
+            <p>大阪在住、30代のさとみです。茶道を通じて感じる、日常の静寂や伝統の美しさを大切にしています。</p>
+            <p>私が茶道を習い、向き合う中で感じた想いをこの場所から発信し、もっと多くの方に茶道の魅力を知っていただければと願っています。</p>
+        </section>
+
+        <section class="message-section">
+            <h2>お便り</h2>
+            <p>茶道について、あなたの想いやお話を聞かせてください。メールでお話ししましょう。</p>
+            <p class="caution-text"></p>
+            
+            <a href="mailto:satomi@masa0000.lsv.jp?subject=茶道についてのお便り" class="submit-btn">
+                さとみへメールを送る
+            </a>
+        </section>
+
+        <footer>
+            &copy; 2026 茶道と私 - Satomi
+        </footer>
+    </div>
+
+</body>
+</html>
